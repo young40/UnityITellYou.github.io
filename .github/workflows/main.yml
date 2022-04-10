@@ -1,0 +1,13 @@
+name: 'GitHub Actions echo'
+
+on:
+  push:
+  schedule:
+    - cron: '*/6 * * * *'
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'echo'
+        run: echo "Hello"
